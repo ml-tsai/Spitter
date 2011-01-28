@@ -1,0 +1,39 @@
+/*== Globals Overrides ==*/
+body{background:#cob59d;}
+
+/*== Global DOM Elements ==*/
+h1,p {color:#333}
+a, a:visited{text-decoration:none; font-weight:600; color:#222;}
+a:hover{text-decoration:underline;}
+li a{display:block;}
+
+/*== GCDS Custom Elements ==*/
+
+/*- Buttons -*/
+.btn {font-size:1.2em; color:#fff; background:#3d4557; padding:10px; text-shadow:1px 1px 1px #000; -moz-border-radius:.5em;}
+.btn:visited{color:#fff;}
+
+/*- Fonts -*/
+@font-face {font-family: 'Harabara'; src: url('/assets/fonts/harabara.ttf') format('truetype');}
+
+/*== Layouts ==*/
+#container{border:1px #foo solid; overflow:hidden;}
+#bg_color{height:80px; width:100%; background:#3d4557; position:absolute; z-index:1;}
+
+
+/*- Header -*/
+header{padding:0px 0; height:80px; color:#fff; position:relative; z-index:2; clear:both; overflow:hidden; margin-bottom:20px;}
+header #logo h1 a{color:#fff; font-size: 4em; line-height:1em; font-family: Harabara, Halvetica, Arial;}
+header #login{margin-top:20px; text-align: center;}
+header #login a{color:#fff;}
+header #login a:hover{text-decoration:underline;}
+/*- Main Body -*/
+#content{margin-bottom:20px;}
+
+
+/*- Footer -*/
+footer{border-top:1px #ccc dashed; padding-top:20px;}
+footer ul{padding:0 10px; overflow:hidden; background:#d4d9e5; clear:both;}
+footer ul li{float:left;}
+footer ul li a{padding:5px; color:#8790a4;}
+footer ul li a:hover{color:#222;}
