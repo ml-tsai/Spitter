@@ -1,31 +1,39 @@
 require 'spec_helper'
 
 describe PagesController do
+  render_views 
+    
+  before(:each) do
+   
+  end
 
   describe "GET 'home'" do
     
-    render_views
-    
-    # Home exists
     it "should be successful" do
-      get 'home'
+      get 'home' 
       response.should be_success
     end
     
-    #TItle Exists
-     it "should have the correct title" do
-      get 'home'
-      response.should have_selector( "title")
- 
+    it "should be the right title" do
+        get 'home'
+      response.should have_selector("title", :content => "Home")
     end
     
   end
+  
+
 
   describe "GET 'contact'" do   
     it "should be successful" do
-      get 'contact'
+      get 'contact' 
       response.should be_success
     end
+    
+     it "should be the right title" do
+      get 'contact'
+      response.should have_selector("title", :content => "Contact") 
+    end
+    
   end
 
    describe "Get 'about'" do
@@ -33,8 +41,13 @@ describe PagesController do
        get 'about'
        response.should be_success
      end
- end
- 
- 
+     
+    it "should be the right title" do
+       get 'about'
+       response.should have_selector("title", :content => "About")
+    end
+       
+   end
+    
 
 end

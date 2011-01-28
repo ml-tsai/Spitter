@@ -1,4 +1,0 @@
-<h3><%= @pagetitle %></h3>
-
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>

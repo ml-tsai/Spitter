@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Spitter - Spit Twits | <%= @pagetitle %> </title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title><%= title %> </title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <div id="bg_color"></div><!-- Header Background -->
+    <div id="container" class="container_12">
+      <%= render "layouts/header" %>
+      <div id="content" class="grid_12">
+        <%= yield %>
+      </div><!-- END #content -->
+      <%= render "layouts/footer" %>
+    </div><!-- End #Container -->
+  </body>
 </html>
