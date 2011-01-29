@@ -18,7 +18,7 @@ li a{display:block;}
 
 /*== Layouts ==*/
 #container{border:1px #foo solid; overflow:hidden;}
-#bg_color{height:80px; width:100%; background:#3d4557; position:absolute; z-index:1;}
+#header_bg{height:80px; width:100%; background:#3d4557; position:absolute; z-index:1;}
 
 
 /*- Header -*/

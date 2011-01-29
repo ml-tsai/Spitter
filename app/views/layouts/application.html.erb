@@ -7,12 +7,16 @@
     <%= csrf_meta_tag %>
   </head>
   <body>
-    <div id="bg_color"></div><!-- Header Background -->
+    <div id="header_bg"></div>
     <div id="container" class="container_12">
+
       <%= render "layouts/header" %>
+
       <div id="content" class="grid_12">
+        <h1><%= @pagetitle%></h1>
         <%= yield %>
       </div><!-- END #content -->
+
       <%= render "layouts/footer" %>
     </div><!-- End #Container -->
   </body>
