@@ -1,5 +1,5 @@
 /*== Globals Overrides ==*/
-body{background:#cob59d;}
+
 
 /*== Global DOM Elements ==*/
 h1,p {color:#333}
@@ -11,14 +11,14 @@ ul{margin:0;}
 /*== GCDS Custom Elements ==*/
 
 /*- Buttons -*/
-.btn {font-size:1.2em; color:#fff; background:#3d4557; padding:10px; text-shadow:1px 1px 1px #000; -moz-border-radius:.5em;}
+.btn {font-size:1.2em; color:#fff; display:inline-block; background:#3d4557; padding:10px; text-shadow:1px 1px 1px #000; -moz-border-radius:.5em;}
 .btn:visited{color:#fff;}
 
 /*- Fonts -*/
 @font-face {font-family: 'Harabara'; src: url('/assets/fonts/harabara.ttf') format('truetype');}
 
 /*== Layouts ==*/
-#container{border:1px #foo solid; overflow:hidden;}
+#container{overflow:hidden;}
 #header_bg{height:80px; width:100%; background:#3d4557; position:absolute; z-index:1;}
 
 
