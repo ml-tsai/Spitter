@@ -3,7 +3,12 @@ require 'spec_helper'
 describe User do
 
   before(:each) do
-    @example = {:name => "Zarne", :email => "zarne@gcds.com.au"}
+    @example = {
+      :name => "Zarne",
+      :email => "zarne@gcds.com.au",
+      :password => "independent",
+      :password_confirmation => "independent"
+      }
   end
 
   it "should creat a new user" do
@@ -27,8 +32,40 @@ describe User do
   end
 
   it "should have a unique valid email" do
-
+  User.create!(@example)
+  @new_name = User.new(@example)
+  @new_name.should_not be_valid
   end
+
+  describe "Password Validations" do
+
+    before(:each) do
+      @user = User.create!(@example)
+    end
+
+    it "should have a password" do
+      User.create(@example.merge(:password => "", :password_confirmation => "")).should_not be_valid
+    end
+
+    it "should match password confirmation" do
+      User.create(@example.merge(:password_confirmation => "differentToPassword")).should_not be_valid
+    end
+
+    it "should reject short passwords" do
+      User.create(@example.merger(:password => "a"*5, :password_confirmation => "a"*3)).should_not be_valid
+    end
+
+    it "should reject long passwords" do
+      User.create(@example.merger(:password => "a"*26, :password_confirmation => "a"*26)).should_not be_valid
+    end
+
+    it "should have an encrypted password" do
+      @user.respond_to?(:encrypted_password)
+    end
+  end
+
+
+  
 
 end
  
