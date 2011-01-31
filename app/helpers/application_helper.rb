@@ -1,5 +1,6 @@
 module ApplicationHelper
-  
+
+
   def title
    base_title = "Spitter"
     if @pagetitle.nil?
@@ -7,7 +8,6 @@ module ApplicationHelper
     else
         "#{base_title} | #{@pagetitle}"
     end
-    
   end
   
 end

@@ -6,6 +6,7 @@ h1,p {color:#333}
 a, a:visited{text-decoration:none; font-weight:600; color:#222;}
 a:hover{text-decoration:underline;}
 li a{display:block;}
+ul{margin:0;}
 
 /*== GCDS Custom Elements ==*/
 
@@ -22,11 +23,17 @@ li a{display:block;}
 
 
 /*- Header -*/
-header{padding:0px 0; height:80px; color:#fff; position:relative; z-index:2; clear:both; overflow:hidden; margin-bottom:20px;}
+header{padding:0px 0; height:80px; color:#fff; position:relative; z-index:2; clear:both; overflow:hidden;}
 header #logo h1 a{color:#fff; font-size: 4em; line-height:1em; font-family: Harabara, Halvetica, Arial;}
 header #login{margin-top:20px; text-align: center;}
 header #login a{color:#fff;}
 header #login a:hover{text-decoration:underline;}
+
+/*- Top Bar -*/
+#top_bar{border-bottom:1px #eee solid; clear:both; margin-bottom:20px;}
+#main_nav {float:right; margin:10px 0;}
+#main_nav li{float:left; margin-left:10px;}
+#main_nav li a{padding:5px; background:#d4d9e5;}
 /*- Main Body -*/
 #content{margin-bottom:20px;}
 

@@ -12,12 +12,18 @@
 
       <%= render "layouts/header" %>
 
+      <%= render "layouts/mainNav" %>
+      
       <div id="content" class="grid_12">
-        <h1><%= @pagetitle%></h1>
+
+        <h1><%= @pagetitle %></h1>
+        
         <%= yield %>
+
       </div><!-- END #content -->
 
       <%= render "layouts/footer" %>
+
     </div><!-- End #Container -->
   </body>
 </html>
