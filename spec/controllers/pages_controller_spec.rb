@@ -2,10 +2,6 @@ require 'spec_helper'
 
 describe PagesController do
   render_views 
-    
-  before(:each) do
-   
-  end
 
   describe "GET 'home'" do
     

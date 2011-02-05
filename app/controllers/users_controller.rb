@@ -1,13 +1,13 @@
 class UsersController < ApplicationController
 
   def index
-    @pagetitle = "All Users"
-    @user = User.all
+    @users = User.all
+    @pagetitle = "Current Members"
   end
 
   def show
-    @pagetitle = "Current User"
     @user = User.find(params[:id])
+    @pagetitle = @user[:name]
   end
 
   def new

@@ -1,10 +1,17 @@
 <div id="top_bar" class="grid_12">
-  
+
+  <small class="title">&raquo; <%= @pagetitle %></small>
+
   <ul id="main_nav">
     <li><%= link_to "Home", root_path %></li>
     <li><%= link_to "About", about_path %></li>
     <li><%= link_to "Help",  help_path %></li>
     <li><%= link_to "Contact", contact_path %></li>
+  </ul>
+
+
+  <ul id="member_nav">
+    <li><%= link_to "Members", users_path %>  </li>
   </ul>
 
 

@@ -1,0 +1,9 @@
+<div class="grid_9 alpha" id="body">
+  <%= gravatar_for @user %> <h1><%= @user.name %></h1>
+</div>
+<div class="grid_3 omega" id="user_sidebar">
+  <div>
+    <p><strong>Email:</strong><br/> <%= @user.email %> </p>
+    <p><strong>URL:</strong><br/> <%= user_url %> </p>
+  </div>
+</div>

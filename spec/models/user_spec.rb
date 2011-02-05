@@ -8,10 +8,10 @@ describe User do
       :email => "zarne@gcds.com.au",
       :password => "independent",
       :password_confirmation => "independent"
-      }
+    }
   end
 
-  it "should creat a new user" do
+  it "should create a new user" do
     User.create!(@example)
   end
 
@@ -32,12 +32,12 @@ describe User do
   end
 
   it "should have a unique valid email" do
-  User.create!(@example)
-  @new_name = User.new(@example)
-  @new_name.should_not be_valid
+    User.create!(@example)
+    @new_name = User.new(@example)
+    @new_name.should_not be_valid
   end
 
-  describe "Password Validations" do
+  describe "password validations" do
 
     before(:each) do
       @user = User.create!(@example)
@@ -52,20 +52,55 @@ describe User do
     end
 
     it "should reject short passwords" do
-      User.create(@example.merger(:password => "a"*5, :password_confirmation => "a"*3)).should_not be_valid
+      User.create(@example.merge(:password => "a"*5, :password_confirmation => "a"*3)).should_not be_valid
     end
 
     it "should reject long passwords" do
-      User.create(@example.merger(:password => "a"*26, :password_confirmation => "a"*26)).should_not be_valid
+      User.create(@example.merge(:password => "a"*26, :password_confirmation => "a"*26)).should_not be_valid
     end
 
     it "should have an encrypted password" do
       @user.respond_to?(:encrypted_password)
     end
+  
+    it "should save as encrypted password" do
+      @user.encrypted_password.should_not be_blank
+    end
+
+    describe "Encrypted Passwords. " do
+
+      it "should be true that the password match" do
+        @user.has_password?(@example[:password]).should be_true
+      end
+
+      it "should fail the test when invalid match" do 
+        @user.has_password?("crazywrongpass").should be_false
+      end
+
+      describe "Authenticate User" do
+
+        it "should return nil on password mismatch" do
+          wrongpass = User.authenticate(@user[:email], "wrongpass")
+          wrongpass.should be_nil  
+        end
+
+        it "should return nill on email mismatch" do
+          wrong_email = User.authenticate("zarne@gcds.com", @user[:password])
+          wrong_email.should be_nil
+        end 
+
+        it "should return user on authenticated success" do
+          correct_user = User.authenticate(@example[:email], @example[:password])
+          correct_user.should == @user
+        end 
+
+        
+      end
+
+
+    end
+
+
   end
 
-
-  
-
 end
- 
