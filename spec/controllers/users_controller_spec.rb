@@ -6,24 +6,76 @@ describe UsersController do
   
   
   describe "GET 'new'" do
+    
     it "should be successful" do
       get 'new'
       response.should be_success
-    end 
-  end
+    end
 
-  describe "Has Page title" do
     it "called New User" do
       get 'new'
       response.should have_selector('title', :content => "Sign Up")
     end
+
+    describe "Post create" do
+
+      describe "should be success" do
+
+        before(:each) do
+          @user = {:name => "Zarne", :email => "zarne@gcds.com.au", :password => "independent", :password_confirmation => "independent"}
+        end
+
+        it "should create user" do
+          lambda do
+            post :create, :user => @user
+          end.should change(User, :count).by(1)
+        end
+
+        it "should redirect to users page" do
+          post :create, :user => @user
+          response.should redirect(user_path(assigns(@user)))
+        end
+
+        it "should flash success" do
+          post :create, :user => @user
+          flash[:success].should =~ /Welcome/i
+        end
+
+      end
+
+      describe "failed to sign up" do
+
+        before(:each) do
+          @user = {:name => "", :email => "", :password => "", :password_confirmation => ""}
+        end
+
+        it "should not create user" do
+          lambda do
+            post :create, :user => @user
+          end.should_not change(User, :count)
+        end
+
+        it "should have title" do
+          post :create, :user => @user
+          response.should have_selector('title', :content => "Sign Up")
+        end
+
+        it "should render 'new' page" do
+          post :create, :user => @user
+          response.should render_template(:new)
+        end
+
+      end
+    end
+
   end
+
  
   describe "GET 'show'" do
 
     before(:each) do
       @user = Factory(:user)
-    end 
+    end
 
     it "should be successful" do
       get :show, :id => @user
@@ -49,7 +101,6 @@ describe UsersController do
       get :show, :id => @user
       response.should have_selector("img", :class => "gravatar")
     end
-    
     
   end
 

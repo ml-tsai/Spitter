@@ -15,7 +15,9 @@
       <%= render "layouts/topBar" %>
 
       <div id="content" class="grid_12">
-
+        <% flash.each do |k,v| %>
+          <div class="flash <%= k %>"><%= v %></div>
+        <% end %>
         <%= yield %>
       
       </div><!-- END #content -->
