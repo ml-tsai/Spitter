@@ -3,8 +3,12 @@
     <h1><%= link_to "SPITTER", root_path %></h1>
   </div>
   <div id="login" class="grid_2 omega">
-    <small>Welcome Guest</small>
+    <small>Welcome <%= signed_in? ? current_user.name.capitalize : "Guest"%> </small>
     <br/>
-    <%= link_to "Login" %>&nbsp;|&nbsp;<%= link_to "Sign Up", new_user_path %>
+    <% if signed_in? %>
+      <%= link_to "Logout", logout_path %>
+    <% else %>
+      <%= link_to "Login", login_path %> | <%= link_to "Sign Up", signup_path %>
+    <% end %>
   </div>
 </header>

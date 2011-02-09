@@ -22,23 +22,29 @@ describe UsersController do
       describe "should be success" do
 
         before(:each) do
-          @user = {:name => "Zarne", :email => "zarne@gcds.com.au", :password => "independent", :password_confirmation => "independent"}
+          @user = {:name => "James", :email => "jasmes@gcds.com.au", :password => "independent", :password_confirmation => "independent"}
         end
 
         it "should create user" do
           lambda do
-            post :create, :user => @user
+            post :create, :user => @user 
           end.should change(User, :count).by(1)
         end
 
         it "should redirect to users page" do
-          post :create, :user => @user
-          response.should redirect(user_path(assigns(@user)))
-        end
+          post :create, :user => @user 
+          response.should redirect_to(user_path(assigns(:user))) #Make sure user doesnt already exist otherwise will throw error
 
+        end
+ 
         it "should flash success" do
           post :create, :user => @user
           flash[:success].should =~ /Welcome/i
+        end
+
+        it "should sign the user in" do
+          post :create, :user => @user
+          controller.should be_signed_in
         end
 
       end

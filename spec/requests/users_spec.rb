@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe User do
+describe "Users" do
 
   before(:each) do
     @example = {
@@ -8,13 +8,13 @@ describe User do
       :email => "zarne@gcds.com.au",
       :password => "independent",
       :password_confirmation => "independent"
-    }
+    } 
   end
 
   it "should create a new user" do
     User.create!(@example)
   end
-
+  
   it "should have a name" do
     @no_name = User.new(@example.merge(:name =>""))
     @no_name.should_not be_valid
@@ -37,7 +37,7 @@ describe User do
     @new_name.should_not be_valid
   end
 
-  describe "password validations" do
+  describe "sign up" do
 
     before(:each) do
       @user = User.create!(@example)
@@ -101,6 +101,38 @@ describe User do
     end
 
 
+  end
+
+  describe "sign in" do
+
+    describe "failure" do
+
+      it "should not sign user in" do
+        visit login_path
+        fill_in :email, :with => ""
+        fill_in :password, :with => ""
+        click_button
+        response.should have_selector('div.flash.error', :content => "Invalid")
+      end
+      
+    end
+
+    describe "succefully" do
+
+      it "should sign user in and out" do
+        user = Factory(:user)
+        visit login_path
+        fill_in :email, :with => user.email
+        fill_in :password, :with => user.password
+        click_button
+        controller.should be_signed_in
+        click_link "Logout"
+        controller.should_not be_signed_in
+      end
+      
+    end
+    
+    
   end
 
 end

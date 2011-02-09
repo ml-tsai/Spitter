@@ -10,9 +10,11 @@
   </ul>
 
 
-  <ul id="member_nav">
-    <li><%= link_to "Members", users_path %>  </li>
+  <% if signed_in? %>
+ <ul id="member_nav">
+    <li><%= link_to "My Profile", current_user %>  </li>
   </ul>
+  <% end %>
 
 
   

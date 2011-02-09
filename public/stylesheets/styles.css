@@ -15,10 +15,8 @@ ul{margin:0;}
 .field_with_errors label{background:#f00; color:#fff;}
 .field_with_errors input{background:#ffaaaa;}
 
-.flash.success{padding:10px; background:#cfa; border:1px #00ff00 solid}
-
-
-
+.flash.success{padding:10px; background:#cfa; border:1px #005500 solid; color:#005500}
+.flash.error{padding:10px; background:#fca; border:1px #550000 solid; color:#550000}
 
 
 /*== GCDS Custom Elements ==*/
@@ -52,7 +50,7 @@ header #login a:hover{text-decoration:underline;}
 #main_nav li a{padding:5px 10px; background:#d4d9e5;}
 #member_nav{float:right; display:inline_block; margin:0;}
 #member_nav li{float:left; margin-right:10px;}
-#member_nav li a{padding:5px 10px; background:#22cc00;}
+#member_nav li a{padding:5px 10px; background:#bbff55;}
 
 /*- Main Body -*/
 #content{margin-bottom:20px;}
