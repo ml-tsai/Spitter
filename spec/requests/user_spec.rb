@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "Users" do
+describe "User" do
 
   before(:each) do
     @example = {
@@ -135,4 +135,25 @@ describe "Users" do
     
   end
 
+  describe "admin attr" do
+
+    before(:each) do
+      @user = User.create!(@example)
+    end
+
+    it "should respond to admin" do
+      @user.should respond_to(:admin)
+    end
+
+    it "not be an admin by default" do
+      @user.should_not be_admin
+    end
+
+    it "should be convertable to admin" do
+      @user.toggle!(:admin)
+      @user.should be_admin
+    end
+
+  end
+  
 end

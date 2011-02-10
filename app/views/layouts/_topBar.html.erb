@@ -12,7 +12,9 @@
 
   <% if signed_in? %>
  <ul id="member_nav">
-    <li><%= link_to "My Profile", current_user %>  </li>
+    <li><%= link_to "All Users", users_path %></li>
+    <li><%= link_to "My Profile", current_user %></li>
+    <li><%= link_to "Settings", edit_user_path(current_user) %></li>
   </ul>
   <% end %>
 

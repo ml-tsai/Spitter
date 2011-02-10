@@ -1,5 +1,11 @@
-<% @users.each do |user| %>
-  <%= link_to user.name, user_path(user) %>
-  <%= user.email %>
+<h3><%= @pagetitle %></h3><br/>
+
+<%= will_paginate %>
 <br/>
+<ul id="users_list">
+<% @users.each do |user| %>
+  <%= render user %>
 <% end %>
+  </ul>
+<br/>
+<%= will_paginate %>

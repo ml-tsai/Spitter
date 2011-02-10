@@ -3,7 +3,7 @@
 
 /*== Global DOM Elements ==*/
 h1,p {color:#333}
-a, a:visited{text-decoration:none; font-weight:600; color:#222;}
+a, a:visited{text-decoration:none; font-weight:600; color:#111144;}
 a:hover{text-decoration:underline;}
 li a{display:block;}
 ul{margin:0;}
@@ -17,7 +17,7 @@ ul{margin:0;}
 
 .flash.success{padding:10px; background:#cfa; border:1px #005500 solid; color:#005500}
 .flash.error{padding:10px; background:#fca; border:1px #550000 solid; color:#550000}
-
+.flash.notice{padding:10px; background:#ff9; border:1px #f90 solid; color:#f90}
 
 /*== GCDS Custom Elements ==*/
 .field{margin-bottom:10px;}
@@ -59,8 +59,14 @@ header #login a:hover{text-decoration:underline;}
 /* Body */
 #content #body h1{padding-bottom:10px;}
 
+#content #users_list{list-style: none;}
+#content #users_list li{margin-bottom:10px; padding-bottom:10px; border-bottom:1px #eee dashed; overflow:hidden; clear:both;}
+#content #users_list li div{float:left;}
+#content #users_list li div a{display:inline-block;}
+
 /* Sidebars */
-#user_sidebar div{border-left:1px solid #eee; display:inline-block; padding:10px; background:#efefef;}
+#user_sidebar{background:#eee;}
+#user_sidebar div{border-left:1px solid #ccc; display:inline-block; padding:10px;}
 
 /*- Footer -*/
 footer{}

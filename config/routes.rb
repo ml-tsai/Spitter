@@ -4,7 +4,7 @@ Spitter::Application.routes.draw do
   resources :sessions, :only => [:new, :create, :destroy]
 
   match "/signup", :to => "users#new"
-  match "/login", :to => "sessions#new", :as => 'login'
+  match "/login", :to => "sessions#new"
   match "/logout", :to => "sessions#destroy"
 
   # Static Pages

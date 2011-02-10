@@ -1,9 +1,6 @@
 <h3><%= @pagetitle %></h3>
-<small>Please fill in all the fields!</small><br/>
-<br/>
-
 <%= form_for(@user) do |f| %>
-<%= render 'shared/error_messages', :object => f.object %>
+  <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
     <%= f.label :name %><br/>
     <%= f.text_field :name %>
@@ -20,7 +17,12 @@
     <%= f.label :password_confirmation, "Confirmation" %><br/>
     <%= f.password_field :password_confirmation %>
   </div>
-<br/>
+  <div class="field">
+    <%= f.label "Image" %><br/>
+    <%= gravatar_for @user%><br/>
+    <a href="http://gravatar.com/emails">Edit Image</a>
+  </div>
+  <br class="clearfix"/>
   <div class="actions">
     <%=  f.submit "Update" %>
   </div>
