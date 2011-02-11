@@ -2469,3 +2469,138 @@ REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email
 REQUESTING PAGE: GET http://www.example.com/users/710 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
 REQUESTING PAGE: GET /logout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/710"}
 REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/logout"}
+REQUESTING PAGE: GET /users/750/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET http://www.example.com/login with {} and HTTP headers {"HTTP_REFERER"=>"/users/750/edit"}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/login"}
+REQUESTING PAGE: GET http://www.example.com/users/750/edit with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/751 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/751"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/752 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/752"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/766 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /logout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/766"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/logout"}
+REQUESTING PAGE: GET /users/839/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET http://www.example.com/login with {} and HTTP headers {"HTTP_REFERER"=>"/users/839/edit"}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/login"}
+REQUESTING PAGE: GET http://www.example.com/users/839/edit with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/840 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/840"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/841 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/841"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/855 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /logout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/855"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/logout"}
+REQUESTING PAGE: GET /users/895/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET http://www.example.com/login with {} and HTTP headers {"HTTP_REFERER"=>"/users/895/edit"}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/login"}
+REQUESTING PAGE: GET http://www.example.com/users/895/edit with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/896 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/896"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/897 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/897"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/911 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /logout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/911"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/logout"}
+REQUESTING PAGE: GET /users/951/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET http://www.example.com/login with {} and HTTP headers {"HTTP_REFERER"=>"/users/951/edit"}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/login"}
+REQUESTING PAGE: GET http://www.example.com/users/951/edit with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/952 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/952"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/953 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/953"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/967 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /logout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/967"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/logout"}
+REQUESTING PAGE: GET /users/1463/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET http://www.example.com/login with {} and HTTP headers {"HTTP_REFERER"=>"/users/1463/edit"}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/login"}
+REQUESTING PAGE: GET http://www.example.com/users/1463/edit with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /about with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /help with {} and HTTP headers {"HTTP_REFERER"=>"/about"}
+REQUESTING PAGE: GET /signup with {} and HTTP headers {"HTTP_REFERER"=>"/help"}
+REQUESTING PAGE: GET /contact with {} and HTTP headers {"HTTP_REFERER"=>"/signup"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"/contact"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/1464 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/1464"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/1465 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET / with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/1465"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"", "password"=>""}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET /login with {} and HTTP headers {}
+REQUESTING PAGE: POST /sessions with {"utf8"=>"\xE2\x9C\x93", "session"=>{"email"=>"zarne@gcds.com.au", "password"=>"independent"}, "commit"=>"Login"} and HTTP headers {"HTTP_REFERER"=>"/login"}
+REQUESTING PAGE: GET http://www.example.com/users/1479 with {} and HTTP headers {"HTTP_REFERER"=>"/sessions"}
+REQUESTING PAGE: GET /logout with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users/1479"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/logout"}
