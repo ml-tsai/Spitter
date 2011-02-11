@@ -2,9 +2,9 @@
 <html>
   <head>
     <title><%= title %> </title>
+    <%= csrf_meta_tag %>
     <%= stylesheet_link_tag :all %>
     <%= javascript_include_tag :defaults %>
-    <%= csrf_meta_tag %>
   </head>
   <body>
     <div id="header_bg"></div>
@@ -18,17 +18,17 @@
         <% flash.each do |k,v| %>
           <div class="flash <%= k %>"><%= v %></div>
         <% end %>
-          <br/>
+        <br/>
         <%= yield %>
-      
+
       </div><!-- END #content -->
 
       <%= render "layouts/footer" %>
 
       <% if Rails.env.development? %>
-      <div class="grid_12"><%= debug(params)%></div>
+        <div class="grid_12"><%= debug(params)%></div>
       <% end %>
     </div><!-- End #Container -->
-    
+
   </body>
 </html>

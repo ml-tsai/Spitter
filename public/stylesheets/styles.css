@@ -48,7 +48,7 @@ header #login a:hover{text-decoration:underline;}
 #main_nav {float:right; margin:0;}
 #main_nav li{float:left; margin-left:10px;}
 #main_nav li a{padding:5px 10px; background:#d4d9e5;}
-#member_nav{float:right; display:inline_block; margin:0;}
+#member_nav{float:right; display:inline-block; margin:0;}
 #member_nav li{float:left; margin-right:10px;}
 #member_nav li a{padding:5px 10px; background:#bbff55;}
 

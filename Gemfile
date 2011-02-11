@@ -8,7 +8,7 @@ gem 'rails', '3.0.3'
 gem 'mysql2'
 gem 'gravatar_image_tag'
 gem 'will_paginate', '3.0.pre2'
-
+gem 'jquery-rails'
 
 group :development do
 	gem 'rspec-rails'
